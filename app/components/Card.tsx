@@ -1,0 +1,30 @@
+import Image from "next/image";
+import Button from "./Button";
+
+type CardProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  href?: string;
+};
+
+export default function Card({
+  title,
+  description,
+  imageSrc,
+  href,
+}: CardProps) {
+  return (
+    <div className="relative flex-1 max-w-lg h-124 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+      <Image src={imageSrc} alt={title} fill className="object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent from-20% to-primary to-70%" />
+      <div className="absolute bottom-0 z-10 p-6 flex flex-col gap-4 text-white">
+        <h2 className="text-3xl font-bold font-heading">{title}</h2>
+        <p className="text-lg text-gray-200">{description}</p>
+        <div className="w-32 mx-auto">
+          <Button href={href} label="Learn More" />
+        </div>
+      </div>
+    </div>
+  );
+}
