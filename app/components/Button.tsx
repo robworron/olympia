@@ -4,12 +4,14 @@ type ButtonProps = {
   label?: string;
   href?: string;
   primary?: boolean;
+  arrow?: boolean;
 };
 
 export default function Button({
   label = "See More",
   href = "/",
   primary = false,
+  arrow = false,
 }: ButtonProps) {
   return (
     <Link
@@ -21,6 +23,7 @@ export default function Button({
       }`}
     >
       {label}
+      {arrow ? <div className="ml-4">→</div> : ""}
     </Link>
   );
 }

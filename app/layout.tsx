@@ -18,9 +18,12 @@ const sans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Olympia Mortgage Group",
+  title: {
+    default: "Olympia Mortgage Group",
+    template: "%s - Olympia Mortgage Group",
+  },
   description:
-    "Niagara's trusted mortgage broker, providing personalized home financing solutions with expert guidance and exceptional service.",
+    "Olympia Mortgage Group offers residential mortgage lending services across the Niagara region, delivering dependable, locally focused financing solutions for homeowners and real estate investors.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
