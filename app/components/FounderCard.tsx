@@ -33,15 +33,15 @@ export default function FounderCard({
         <p className="text-lg">{description}</p>
         <span className="w-4/5 h-[0.5] mx-auto my-4 bg-gray-200" />
         <ul className="flex flex-col gap-4">
-          <li className="flex gap-2">
+          <li className="flex gap-2 items-center">
             <div>{quickIcons[0]}</div>
             <p>{quickFacts[0]}</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 items-center">
             <div>{quickIcons[1]}</div>
             <p>{quickFacts[1]}</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 items-center">
             <div>{quickIcons[2]}</div>
             <p>{quickFacts[2]}</p>
           </li>

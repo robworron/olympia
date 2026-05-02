@@ -1,81 +1,14 @@
 import Image from "next/image";
-import Badge from "../components/Badge";
 import Button from "../components/Button";
+import InvestorBadge from "../components/InvestorBadge";
 import InvestorProcess from "../components/InvestorProcess";
+import { CHART_ICON, HOME_ICON, NEWS_ICON, USERS_ICON } from "@/utils/icons";
 
 export const metadata = {
   title: "Investors",
   description:
-    "Invest in Niagara real estate with Olympia Mortgage Group. Access secure residential mortgage opportunities, consistent returns, and trusted local expertise.",
+    "Invest with Olympia Mortgage Group, a Niagara-based private lender offering secure, asset-backed opportunities in residential real estate with consistent returns and experienced management.",
 };
-
-const CHART = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1}
-    stroke="#c19d55"
-    className="w-24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
-    />
-  </svg>
-);
-
-const HOME = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1}
-    stroke="#c19d55"
-    className="w-24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-    />
-  </svg>
-);
-
-const NEWS = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="#1d2c48"
-    viewBox="-6 -6 36 36"
-    strokeWidth={1}
-    stroke="white"
-    className="w-full bg-primary rounded-full"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"
-    />
-  </svg>
-);
-
-const USERS = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1}
-    stroke="#c19d55"
-    className="w-24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
-    />
-  </svg>
-);
 
 export default function Investors() {
   return (
@@ -103,21 +36,21 @@ export default function Investors() {
       </section>
       <section className="flex justify-center w-full bg-primary mt-32 py-16">
         <div className="grid grid-cols-3 gap-12 w-4/5 max-w-7xl">
-          <Badge
-            icon={CHART}
-            header={"Dependable Results"}
+          <InvestorBadge
+            icon={<CHART_ICON strokeColour="#c19d55" className="size-20" />}
+            header="REASON 1"
             text={"Delivering more than a decade of reliable returns."}
           />
-          <Badge
-            icon={HOME}
-            header={"Local Market Expertise"}
+          <InvestorBadge
+            icon={<HOME_ICON strokeColour="#c19d55" className="size-20" />}
+            header="REASON 2"
             text={
               "Hundreds of contacts through life-long residence in Niagara."
             }
           />
-          <Badge
-            icon={USERS}
-            header={"Experienced Team"}
+          <InvestorBadge
+            icon={<USERS_ICON strokeColour="#c19d55" className="size-20" />}
+            header="REASON 3"
             text={
               "Over 40 years of combined experience in residential real estate."
             }
@@ -153,7 +86,7 @@ export default function Investors() {
                 <li>
                   <InvestorProcess
                     number="1"
-                    icon={NEWS}
+                    icon={<NEWS_ICON className="size-16" />}
                     heading="HEADER 1"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
                   />
@@ -161,7 +94,7 @@ export default function Investors() {
                 <li>
                   <InvestorProcess
                     number="2"
-                    icon={NEWS}
+                    icon={<CHART_ICON className="size-16" />}
                     heading="HEADER 2"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
                   />
@@ -169,7 +102,7 @@ export default function Investors() {
                 <li>
                   <InvestorProcess
                     number="3"
-                    icon={NEWS}
+                    icon={<HOME_ICON className="size-16" />}
                     heading="HEADER 3"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
                   />
@@ -177,7 +110,7 @@ export default function Investors() {
                 <li>
                   <InvestorProcess
                     number="4"
-                    icon={NEWS}
+                    icon={<USERS_ICON className="size-16" />}
                     heading="HEADER 4"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
                   />

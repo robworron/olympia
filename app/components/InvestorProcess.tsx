@@ -2,7 +2,6 @@ type InvestorProcessProps = {
   number?: string;
   icon?: React.ReactNode;
   heading?: string;
-  subheading?: string;
   description?: string;
 };
 
@@ -10,7 +9,6 @@ export default function InvestorProcess({
   number,
   icon,
   heading,
-  subheading,
   description,
 }: InvestorProcessProps) {
   return (
