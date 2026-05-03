@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Card from "./components/Card";
+import HomeCard from "./components/HomeCard";
 import Button from "./components/Button";
 
 export default function Home() {
@@ -42,13 +42,13 @@ export default function Home() {
 
       {/** Cards Section */}
       <section className="flex flex-col md:flex-row gap-8 justify-around w-full max-w-7xl my-8 md:my-16 px-4 md:px-8">
-        <Card
+        <HomeCard
           title="Investors"
           description="Earn consistent returns through carefully vetted mortgage opportunities."
           imageSrc={"/assets/investors.png"}
           href="/investors"
         />
-        <Card
+        <HomeCard
           title="Brokers"
           description="Help your clients move forward with practical lending solutions."
           imageSrc={"/assets/brokers.png"}
