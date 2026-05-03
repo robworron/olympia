@@ -7,7 +7,7 @@ type NavMenuProps = {
 export default function NavMenu({ onClick }: NavMenuProps) {
   return (
     <nav
-      className="absolute md:hidden top-16 right-0 border-l-1 border-b-1 border-gray-200 rounded-bl-xl"
+      className="absolute lg:hidden top-16 md:top-24 right-0 border-l-1 border-b-1 border-gray-200 rounded-bl-xl"
       aria-label="Main navigation"
     >
       <ul className="flex flex-col w-60 bg-white text-xl font-semibold font-heading rounded-bl-xl">

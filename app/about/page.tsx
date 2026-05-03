@@ -11,18 +11,18 @@ export const metadata = {
 export default function About() {
   return (
     <div>
-      <section className="relative flex justify-center w-full h-[60vh] overflow-hidden">
-        <div className="relative flex w-full h-full">
-          <div className="z-20 flex flex-col justify-center gap-4 w-2/5 h-full p-12 pl-24">
+      <section className="relative flex justify-center w-full h-[70vh] md:h-[60vh] mb-8 md:mb-0 overflow-hidden">
+        <div className="relative flex flex-col-reverse md:flex-row w-full h-full">
+          <div className="z-20 flex flex-col justify-center gap-4 w-full md:w-2/5 h-full p-4 xl:p-12 xl:pl-24">
             <div className="w-full">
-              <h1 className="text-5xl text-primary font-heading font-bold">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl text-primary font-heading font-bold">
                 About Olympia
               </h1>
-              <h4 className="text-2xl text-accent font-heading font-semibold opacity-70">
+              <h4 className="text-lg md:text-xl xl:text-2xl text-accent font-heading font-semibold opacity-70">
                 Credibility Through Experience
               </h4>
             </div>
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               75-100 words about your business goes here. Lorem ipsum dolor sit
               amet, consectetur adipiscing elit. Nunc fermentum lacinia sem,
               vitae auctor urna pellentesque eget. Integer maximus sem feugiat
@@ -36,32 +36,34 @@ export default function About() {
               felis.
             </p>
           </div>
-          <div className="relative w-3/5 h-full">
+          <div className="relative w-full md:w-3/5 h-full">
             <Image
               src="/assets/about.png"
               alt="About image"
               fill
-              className="object-cover"
+              className="object-fill md:object-cover p-4 md:p-0"
             />
           </div>
         </div>
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-white from-40% to-white/20 to-70%" />
+        <div className="hidden md:flex absolute inset-0 z-10 bg-gradient-to-r from-white from-40% to-white/20 to-70%" />
       </section>
       <div className="w-full h-2 bg-gradient-to-r from-accent/20 via-accent to-accent/20" />
-      <section className="flex flex-col items-center w-full my-24 px-8">
-        <div className="flex flex-col gap-2 items-center w-1/3 min-w-[1000px] mb-12 text-center">
-          <h4 className="text-2xl text-accent font-heading">Our Founders</h4>
-          <h2 className="mb-4 text-5xl font-heading font-bold">
+      <section className="flex flex-col items-center w-full my-12 md:my-24 px-4 md:px-8">
+        <div className="flex flex-col gap-2 items-center w-full lg:w-4xl mb-12 text-center">
+          <h4 className="text-xl lg:text-2xl text-accent font-heading">
+            Our Founders
+          </h4>
+          <h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-heading font-bold">
             The People Behind Olympia
           </h2>
-          <p className="mb-4 text-xl">
+          <p className="mb-4 text-lg lg:text-xl">
             With a shared passion for helping clients achieve homeownership, out
             founders bring expertise, integrity, and personal touch to every
             mortgage journey.
           </p>
         </div>
-        <div className="flex gap-8 justify-center w-full">
-          <div className="w-1/2 max-w-[1000px] h-full border-1 border-gray-200 rounded-3xl shadow-xl overflow-hidden">
+        <div className="flex flex-col xl:flex-row gap-8 justify-center w-full">
+          <div className="w-full xl:w-1/2 max-w-[1000px] h-full border-1 border-gray-200 rounded-3xl shadow-xl overflow-hidden">
             <FounderCard
               name="Justin Domanico"
               jobTitle="Mortgage Broker"
@@ -78,16 +80,16 @@ export default function About() {
                 "300+ Families Helped",
               ]}
               quickIcons={[
-                <HOME_ICON className="size-8" />,
-                <TROPHY_ICON className="size-8" />,
-                <USERS_ICON className="size-8" />,
+                <HOME_ICON className="size-6 md:size-8 lg:size-6" />,
+                <TROPHY_ICON className="size-6 md:size-8 lg:size-6" />,
+                <USERS_ICON className="size-6 md:size-8 lg:size-6" />,
               ]}
               contact="hello@hello.com"
               imgSrc="/assets/about-headshot-r.png"
               imgAlt="Image of Justin Domanico"
             />
           </div>
-          <div className="w-1/2 max-w-[1000px] h-full border-1 border-gray-200 rounded-3xl shadow-xl overflow-hidden">
+          <div className="w-full xl:w-1/2 max-w-[1000px] h-full border-1 border-gray-200 rounded-3xl shadow-xl overflow-hidden">
             <FounderCard
               name="George Bahdi"
               jobTitle="Realtor"
@@ -104,9 +106,9 @@ export default function About() {
                 "Hundreds of Contracting Contacts",
               ]}
               quickIcons={[
-                <HOME_ICON className="size-8" />,
-                <TROPHY_ICON className="size-8" />,
-                <USERS_ICON className="size-8" />,
+                <HOME_ICON className="size-6 md:size-8 lg:size-6" />,
+                <TROPHY_ICON className="size-6 md:size-8 lg:size-6" />,
+                <USERS_ICON className="size-6 md:size-8 lg:size-6" />,
               ]}
               contact="hello@hello.com"
               imgSrc="/assets/about-headshot.png"

@@ -28,10 +28,10 @@ export default function Header() {
             fill
           />
         </Link>
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <Navigation />
         </div>
-        <div className="flex md:hidden">
+        <div className="flex lg:hidden">
           <Burger isActive={burgerOpen} onClick={toggleMenu} />
         </div>
       </div>

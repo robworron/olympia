@@ -56,9 +56,9 @@ export default function Home() {
         />
       </section>
 
-      {/** About Section */}
+      {/** Our Experience Section */}
       <section className="w-full bg-gradient-to-b from-white to-primary/10 border-t border-gray-100 px-4 md:px-8 py-8 md:py-16">
-        <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-8 md:gap-16 justify-between items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-16 justify-between max-w-7xl mx-auto">
           <div className="flex flex-col gap-4 md:gap-8">
             <div>
               <h4 className="text-sm tracking-widest text-accent font-semibold">
@@ -102,7 +102,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative flex-1 w-full">
-            <div className="relative w-full h-[280px] md:h-[420px] rounded-xl overflow-hidden shadow-lg">
+            <div className="relative w-full h-[280px] md:h-[420px] lg:h-full rounded-xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/experience.png"
                 alt="Team working on real estate deals"
@@ -115,18 +115,18 @@ export default function Home() {
       </section>
 
       {/** Services Section */}
-      <section className="flex flex-col md:flex-row gap-8 w-full mt-8 md:mt-16 mb-16 md:mb-32 px-4 md:px-8 py-8 md:py-16">
+      <section className="flex flex-col lg:flex-row gap-8 w-full mt-8 md:mt-16 mb-16 md:mb-32 px-4 md:px-8 lg:px-0 py-8 md:py-16">
         <div className="flex-1">
-          <div className="relative w-full h-[280px] md:h-[600px]">
+          <div className="relative w-full h-[280px] md:h-[600px] lg:h-full">
             <Image
               src="/assets/home-services.png"
               alt="temp"
               fill
-              className="object-cover rounded-xl md:rounded-none"
+              className="object-cover rounded-xl lg:rounded-none"
             />
           </div>
         </div>
-        <div className="flex-1 flex items-center">
+        <div className="flex-1 flex items-center pr-8">
           <div className="flex flex-col justify-center gap-4 md:gap-8">
             <div>
               <h4 className="text-sm tracking-widest text-accent font-semibold">
@@ -164,7 +164,6 @@ export default function Home() {
                   Flexible funding for new builds
                 </p>
               </div>
-
               <div className="border-l-2 border-accent pl-4">
                 <p className="font-semibold text-primary">
                   Broker Partnerships
