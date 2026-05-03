@@ -4,9 +4,9 @@ import Button from "./components/Button";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex gap-16 w-full flex-col items-center">
+    <div className="flex-1 flex gap-4 md:gap-16 w-full flex-col items-center">
       {/** Hero Section */}
-      <section className="relative w-full h-[60vh] overflow-hidden">
+      <section className="relative w-full h-[40vh] md:h-[60vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/hero.png"
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 flex items-center justify-around h-full mx-auto px-8">
           <div className="max-w-xl flex flex-col gap-6">
-            <h1 className="text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight">
               Lending You Can Rely On
             </h1>
             <p className="text-xl font-semibold text-gray-600">
@@ -29,7 +29,7 @@ export default function Home() {
               <Button label="Get Started" href="/contact" primary />
             </div>
           </div>
-          <div className="relative w-72 h-72">
+          <div className="hidden md:flex md:relative md:w-72 md:h-72">
             <Image
               src="/assets/logo.png"
               alt="Olympia Mortgage Group logo"
@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       {/** Cards Section */}
-      <section className="flex gap-8 justify-around w-full max-w-7xl my-16 px-8">
+      <section className="flex flex-col md:flex-row gap-8 justify-around w-full max-w-7xl my-8 md:my-16 px-4 md:px-8">
         <Card
           title="Investors"
           description="Earn consistent returns through carefully vetted mortgage opportunities."
@@ -57,19 +57,19 @@ export default function Home() {
       </section>
 
       {/** About Section */}
-      <section className="w-full bg-gradient-to-b from-white to-primary/10 border-t border-gray-100 py-16 px-8">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div className="flex flex-col gap-8">
+      <section className="w-full bg-gradient-to-b from-white to-primary/10 border-t border-gray-100 px-4 md:px-8 py-8 md:py-16">
+        <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-8 md:gap-16 justify-between items-center">
+          <div className="flex flex-col gap-4 md:gap-8">
             <div>
               <h4 className="text-sm tracking-widest text-accent font-semibold">
                 OUR EXPERIENCE
               </h4>
-              <h2 className="text-4xl font-bold font-heading mt-3 leading-tight">
+              <h2 className="text-2xl md:text-4xl font-bold font-heading mt-3 leading-tight">
                 Built on Real Deals, Not Theory
               </h2>
             </div>
             <div className="w-20 h-1 bg-accent" />
-            <p className="text-lg text-primary leading-relaxed max-w-xl">
+            <p className="md:text-lg text-primary leading-relaxed max-w-xl">
               ~ 50 words here to summarize something quick about yourself, and
               your company. We've spent years working within the Niagara
               region's residential market, structuring deals that actually
@@ -79,24 +79,30 @@ export default function Home() {
             </p>
             <div className="flex gap-10 pt-2">
               <div>
-                <p className="text-3xl font-bold text-primary">10+</p>
+                <p className="text-xl md:text-3xl font-bold text-primary">
+                  10+
+                </p>
                 <p className="text-sm text-gray-600">Years Experience</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">250+</p>
+                <p className="text-xl md:text-3xl font-bold text-primary">
+                  250+
+                </p>
                 <p className="text-sm text-gray-600">Deals Funded</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">Niagara</p>
+                <p className="text-xl md:text-3xl font-bold text-primary">
+                  Niagara
+                </p>
                 <p className="text-sm text-gray-600">Local Expertise</p>
               </div>
             </div>
-            <div className="max-w-64 pt-4">
+            <div className="w-52 md:w-64 pt-4 mx-auto md:m-0">
               <Button label="Learn More About Us" href="/about" primary />
             </div>
           </div>
-          <div className="relative">
-            <div className="relative w-full h-[420px] rounded-xl overflow-hidden shadow-lg">
+          <div className="relative flex-1 w-full">
+            <div className="relative w-full h-[280px] md:h-[420px] rounded-xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/experience.png"
                 alt="Team working on real estate deals"
@@ -109,29 +115,29 @@ export default function Home() {
       </section>
 
       {/** Services Section */}
-      <section className="flex gap-8 w-full mt-16 mb-32">
+      <section className="flex flex-col md:flex-row gap-8 w-full mt-8 md:mt-16 mb-16 md:mb-32 px-4 md:px-8 py-8 md:py-16">
         <div className="flex-1">
-          <div className="relative w-full h-[600px]">
+          <div className="relative w-full h-[280px] md:h-[600px]">
             <Image
               src="/assets/home-services.png"
               alt="temp"
               fill
-              className="object-cover"
+              className="object-cover rounded-xl md:rounded-none"
             />
           </div>
         </div>
         <div className="flex-1 flex items-center">
-          <div className="flex flex-col justify-center gap-8">
+          <div className="flex flex-col justify-center gap-4 md:gap-8">
             <div>
               <h4 className="text-sm tracking-widest text-accent font-semibold">
                 OUR SERVICES
               </h4>
-              <h2 className="text-4xl font-bold font-heading mt-3 leading-tight">
+              <h2 className="text-2xl md:text-4xl font-bold font-heading mt-3 leading-tight">
                 Lending Solutions Built Around Your Goals
               </h2>
             </div>
             <div className="w-20 h-1 bg-accent" />
-            <p className="text-lg text-primary leading-relaxed max-w-xl">
+            <p className="text-base md:text-lg text-primary leading-relaxed max-w-xl">
               ~ 50 words here to summarize what services you offer your clients
               and why they should choose you. We provide tailored residential
               financing solutions for homeowners, brokers, and investors
@@ -177,7 +183,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="max-w-64 pt-4">
+            <div className="w-52 md:w-64 pt-4 mx-auto md:mx-0">
               <Button label="See Our Services" href="/services" primary />
             </div>
           </div>

@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col items-center md:items-start gap-6">
           <div className="flex items-center gap-2">
             <div className="relative w-16 h-16">
               <Image
@@ -30,7 +30,7 @@ export default function Footer() {
               />
             </div>
           </div>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm text-gray-300 text-center md:text-start">
             Licensed by the Financial Services Regulatory Authority of Ontario
             (FSRA)
           </p>
