@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex-1 flex gap-4 md:gap-16 w-full flex-col items-center">
       {/** Hero Section */}
-      <section className="relative w-full h-[40vh] md:h-[60vh] overflow-hidden">
+      <section className="relative w-full h-[40vh] min-h-[400px] md:h-[60vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/hero.png"

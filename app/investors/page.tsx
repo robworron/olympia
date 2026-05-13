@@ -78,7 +78,7 @@ export default function Investors() {
       <span className="w-full h-2 bg-accent" />
 
       {/** HOW IT WORKS SECTION */}
-      <section className="relative flex flex-col justify-center items-center w-full h-[30vh] md:h-auto md:min-h-[80vh]">
+      <section className="relative flex flex-col justify-center items-center w-full h-[30vh] min-h-[350px] md:h-auto md:min-h-[80vh]">
         <div className="absolute w-full h-full">
           <Image
             src="/assets/investor-hero.png"

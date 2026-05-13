@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center w-full">
       {/* HERO SECTION */}
-      <section className="relative flex w-full h-[30vh] md:h-[50vh] xl:h-[70vh] mx-12">
+      <section className="relative flex w-full h-[30vh] min-h-[350px] md:h-[50vh] xl:h-[70vh] mx-12">
         <div className="hidden lg:flex z-10 absolute inset-0 w-4/5 bg-gradient-to-br from-white from-40% to-transparent to-50% [clip-path:polygon(0_0,100%_0,60%_100%,0_100%)]" />
         <div className="hidden lg:flex z-10 absolute inset-0 w-4/5 bg-gradient-to-r from-white from-50% to-transparent to-60% [clip-path:polygon(0_0,100%_0,60%_100%,0_100%)]" />
         <div className="z-20 flex-1 flex justify-end items-center max-w-4xl px-4 md:px-8 lg:px-12">

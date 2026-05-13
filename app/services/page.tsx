@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full">
       {/* HERO SECTION */}
-      <section className="relative flex w-full h-[50vh]">
+      <section className="relative flex w-full min-h-[400px] h-[50vh]">
         <div className="z-10 absolute w-full h-full bg-gradient-to-r from-primary/70 md:from-primary md:from-50% to-primary/85 md:to-white/40 md:to-75%" />
         <div className="z-20 flex-1 flex justify-center items-center w-full h-full">
           <div className="flex flex-col gap-12 p-4 md:p-0 md:ml-4 xl:ml-0">

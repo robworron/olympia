@@ -11,7 +11,7 @@ export const metadata = {
 export default function About() {
   return (
     <div>
-      <section className="relative flex justify-center w-full h-[70vh] md:h-[60vh] mb-8 md:mb-0 overflow-hidden">
+      <section className="relative flex justify-center w-full h-[70vh] min-h-[800px] md:min-h-0 md:h-[60vh] mb-8 md:mb-0 overflow-hidden">
         <div className="relative flex flex-col-reverse md:flex-row w-full h-full">
           <div className="z-20 flex flex-col justify-center gap-4 w-full md:w-2/5 h-full p-4 xl:p-12 xl:pl-24">
             <div className="w-full">
