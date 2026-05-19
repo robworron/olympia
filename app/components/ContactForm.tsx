@@ -3,7 +3,9 @@
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("aaaaaaa"); // FORMSPREE DATA
+  const [state, handleSubmit] = useForm(
+    process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID ?? "",
+  );
   if (state.succeeded) {
     return (
       <div className="flex flex-col text-center">
@@ -28,6 +30,7 @@ const ContactForm = () => {
               type="text"
               name="fname"
               className={inputFieldStyles}
+              placeholder="John"
               required
             />
             <ValidationError
@@ -42,6 +45,7 @@ const ContactForm = () => {
               type="text"
               name="lname"
               className={inputFieldStyles}
+              placeholder="Smith"
               required
             />
             <ValidationError
@@ -51,12 +55,14 @@ const ContactForm = () => {
             />
           </div>
         </div>
+        <input type="text" name="_gotcha" className="hidden" />
         <div className="flex flex-col">
           <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
             className={inputFieldStyles}
+            placeholder="john.smith@email.com"
             required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -65,7 +71,8 @@ const ContactForm = () => {
           <label htmlFor="message">Message</label>
           <textarea
             name="message"
-            className={`${inputFieldStyles} h-36`}
+            className={`${inputFieldStyles} h-36 resize-none`}
+            placeholder="Brief message for Olympia Mortgage Group"
             required
           ></textarea>
           <ValidationError
