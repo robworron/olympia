@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BrokerBadge from "../components/BrokerBadge";
 import Button from "../components/Button";
-import { HANDSHAKE_ICON, PIN_ICON, USERS_ICON } from "@/utils/icons";
+import { HOME_ICON, HANDSHAKE_ICON, USERS_ICON } from "@/utils/icons";
 
 export const metadata = {
   title: "Brokers",
@@ -26,14 +26,13 @@ export default function Brokers() {
           <div className="w-1/4 lg:w-1/10 h-2 my-6 bg-accent" />
           <div className="flex flex-col gap-1 lg:text-lg xl:text-xl">
             <p className="w-full md:w-7/8 xl:w-3/4 max-w-3xl">
-              50-75 words on what you want your brokers to know and how you will
-              help them. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Mauris fringilla libero mauris, eu feugiat felis auctor sit
-              amet. Quisque rhoncus facilisis imperdiet. Donec sollicitudin
-              felis sed turpis pharetra, et pharetra ex malesuada. Sed eleifend
-              sit amet tellus et hendrerit. In interdum, magna quis ullamcorper
-              mollis, orci urna viverra erat, at pretium neque odio in leo. Duis
-              nunc arcu, mollis varius ipsum vitae, bibendum sodales turpis.
+              Olympia Mortgage Group works with brokers who need responsive,
+              practical private lending solutions for clients who may not fit
+              traditional guidelines. Files are reviewed by an active Level 2
+              Mortgage Agent who understands broker expectations, deal
+              structure, documentation, and timelines. We focus on common-sense
+              approvals, competitive pricing, quick feedback, and strong real
+              estate fundamentals.
             </p>
           </div>
           <div className="w-1/2 lg:w-1/3 xl:w-1/5 mt-10">
@@ -63,19 +62,19 @@ export default function Brokers() {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 w-full mt-4 md:mt-8 px-4">
             <BrokerBadge
-              icon={<PIN_ICON className="size-12" />}
-              header="ADVANTAGE 1"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus."
+              icon={<USERS_ICON className="size-12" />}
+              header="Fast, Practical Feedback"
+              text="We understand that brokers need clear answers quickly. Olympia provides timely feedback so you know whether a deal has a path forward."
             />
             <BrokerBadge
               icon={<HANDSHAKE_ICON className="size-12" />}
-              header="ADVANTAGE 2"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus."
+              header="Broker-Aware Underwriting"
+              text="Files are reviewed with an understanding of how brokers structure deals, communicate with clients, and manage time-sensitive closings."
             />
             <BrokerBadge
-              icon={<USERS_ICON className="size-12" />}
-              header="ADVANTAGE 3"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus."
+              icon={<HOME_ICON className="size-12" />}
+              header="Builder-Backed Insight"
+              text="For construction, renovation, and development files, George Bahdi’s 30+ years of building experience can provide added insight into feasibility, timelines, costs, and project risk."
             />
           </div>
         </div>

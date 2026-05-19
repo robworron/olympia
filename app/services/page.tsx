@@ -60,11 +60,8 @@ export default function Services() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-8">
               <ServiceCard
-                header="SERVICE 1"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          bibendum ac mauris a ultrices. Vivamus pulvinar tortor euismod,
-          consectetur mauris ac, dictum enim. Nunc id libero pellentesque lectus
-          ultrices suscipit."
+                header="Purchases"
+                text="Olympia provides private mortgage solutions for purchase transactions that may not fit traditional lending guidelines. We review first and second mortgage opportunities on a case-by-case basis, considering property strength, borrower profile, available equity, and exit strategy."
                 imageSrc="/assets/services1.png"
                 icon={
                   <HOME_ICON
@@ -74,28 +71,22 @@ export default function Services() {
                 }
               />
               <ServiceCard
-                header="SERVICE 2"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          bibendum ac mauris a ultrices. Vivamus pulvinar tortor euismod,
-          consectetur mauris ac, dictum enim. Nunc id libero pellentesque lectus
-          ultrices suscipit."
-                imageSrc="/assets/services2.png"
+                header="Refinances & Equity Take-Outs"
+                text="We help borrowers access equity through private refinance and equity take-out solutions. These files may involve tight timelines, non-traditional income, credit challenges, or scenarios where conventional lenders are unable to provide a timely solution."
+                imageSrc="/assets/services3.png"
                 icon={
-                  <TOOLS_ICON
+                  <CHART_ICON
                     className="size-6 md:size-8"
                     strokeColour="#c19d55"
                   />
                 }
               />
               <ServiceCard
-                header="SERVICE 3"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          bibendum ac mauris a ultrices. Vivamus pulvinar tortor euismod,
-          consectetur mauris ac, dictum enim. Nunc id libero pellentesque lectus
-          ultrices suscipit."
-                imageSrc="/assets/services3.png"
+                header="Construction, Renovation & Development"
+                text="Olympia's niche is construction, renovation, and development financing. With George Bahdi's 30+ years of building experience, we can assess project feasibility, timelines, budgets, and build-related risk while structuring practical lending solutions for real estate-backed projects."
+                imageSrc="/assets/services2.png"
                 icon={
-                  <CHART_ICON
+                  <TOOLS_ICON
                     className="size-6 md:size-8"
                     strokeColour="#c19d55"
                   />

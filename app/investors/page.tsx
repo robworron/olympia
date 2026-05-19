@@ -2,7 +2,13 @@ import Image from "next/image";
 import Button from "../components/Button";
 import InvestorBadge from "../components/InvestorBadge";
 import InvestorProcess from "../components/InvestorProcess";
-import { CHART_ICON, HOME_ICON, NEWS_ICON, USERS_ICON } from "@/utils/icons";
+import {
+  CHART_ICON,
+  HANDSHAKE_ICON,
+  HOME_ICON,
+  NEWS_ICON,
+  USERS_ICON,
+} from "@/utils/icons";
 
 export const metadata = {
   title: "Investors",
@@ -20,16 +26,16 @@ export default function Investors() {
         </h1>
         <span className="w-1/4 md:w-1/8 h-1 bg-accent" />
         <p className="w-full xl:w-4/5 text-lg md:text-xl text-center md:text-start">
-          75-100 words about your business goes here. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Nunc fermentum lacinia sem, vitae
-          auctor urna pellentesque eget. Integer maximus sem feugiat hendrerit
-          finibus. Aliquam commodo, mi nec condimentum pharetra, justo purus
-          gravida enim, efficitur imperdiet orci ipsum vitae tortor. Aenean sit
-          amet dui at orci vestibulum fringilla et at neque. Mauris quis justo
-          faucibus, blandit lectus ut, imperdiet dolor. Nunc lobortis lorem et
-          eros bibendum cursus. Sed arcu urna, bibendum in mauris ut, egestas
-          rutrum nunc. Mauris ac porttitor ipsum. Maecenas vel quam eget turpis
-          dapibus sodales rhoncus sed felis.
+          Olympia Mortgage Group Inc. is a licensed mortgage administrator that
+          presents private mortgage opportunities to individual investors on a
+          deal-by-deal basis. Investors can review each opportunity and choose
+          whether it fits their goals, risk tolerance, and investment
+          preferences. Olympia administers the mortgage by coordinating payment
+          collection, investor distributions, renewals, and ongoing servicing.
+          Opportunities typically target annual returns in the range of 9% -
+          15%, depending on the structure and risk profile of the loan. Where
+          available, select opportunities may also include co-investment
+          alongside Olympia's principals.
         </p>
         <div className="w-48">
           <Button label="Get Started" href="/contact" primary />
@@ -41,13 +47,27 @@ export default function Investors() {
         <div className="grid grid-cols-3 gap-4 md:gap-12 w-full md:w-4/5 max-w-7xl">
           <InvestorBadge
             icon={
+              <USERS_ICON
+                strokeColour="#c19d55"
+                className="size-12 md:size-20"
+              />
+            }
+            header="Deal-by-Deal Transparency"
+            text={
+              "Investors review individual opportunities and choose whether to participate based on the details of each file."
+            }
+          />
+          <InvestorBadge
+            icon={
               <CHART_ICON
                 strokeColour="#c19d55"
                 className="size-12 md:size-20"
               />
             }
-            header="REASON 1"
-            text={"Delivering more than a decade of reliable returns."}
+            header="Real Estate-Backed Security"
+            text={
+              "Opportunities are secured by registered mortgages on real property and reviewed with a focus on loan-to-value, exit strategy, and borrower profile."
+            }
           />
           <InvestorBadge
             icon={
@@ -56,21 +76,9 @@ export default function Investors() {
                 className="size-12 md:size-20"
               />
             }
-            header="REASON 2"
+            header="Construction Expertise"
             text={
-              "Hundreds of contacts through life-long residence in Niagara."
-            }
-          />
-          <InvestorBadge
-            icon={
-              <USERS_ICON
-                strokeColour="#c19d55"
-                className="size-12 md:size-20"
-              />
-            }
-            header="REASON 3"
-            text={
-              "Over 40 years of combined experience in residential real estate."
+              "George Bahdi's 30+ years of building and development experience adds practical insight when reviewing construction, renovation, and development-related files."
             }
           />
         </div>
@@ -109,33 +117,25 @@ export default function Investors() {
                 <li>
                   <InvestorProcess
                     number="1"
-                    icon={<NEWS_ICON className="size-12 lg:size-16" />}
-                    heading="HEADER 1"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
+                    icon={<HANDSHAKE_ICON className="size-12 lg:size-16" />}
+                    heading="Initial Consultation & Onboarding"
+                    description="We begin with a conversation to understand your investment goals, preferences, risk tolerance, and desired level of participation. Investors then complete the required onboarding forms so Olympia can present suitable opportunities when available."
                   />
                 </li>
                 <li>
                   <InvestorProcess
                     number="2"
-                    icon={<CHART_ICON className="size-12 lg:size-16" />}
-                    heading="HEADER 2"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
+                    icon={<NEWS_ICON className="size-12 lg:size-16" />}
+                    heading="Deal Review"
+                    description="Olympia presents carefully reviewed lending opportunities that may align with your stated goals and preferences. Each opportunity includes key information such as loan amount, property details, security position, rate, term, exit strategy, and relevant risk considerations."
                   />
                 </li>
                 <li>
                   <InvestorProcess
                     number="3"
-                    icon={<HOME_ICON className="size-12 lg:size-16" />}
-                    heading="HEADER 3"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
-                  />
-                </li>
-                <li>
-                  <InvestorProcess
-                    number="4"
-                    icon={<USERS_ICON className="size-12 lg:size-16" />}
-                    heading="HEADER 4"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
+                    icon={<CHART_ICON className="size-12 lg:size-16" />}
+                    heading="Funding & Administration"
+                    description="All mortgage transactions are completed through a real estate lawyer and funded through trust. Once the mortgage is registered and funded, Olympia administers the loan, including payment collection, investor distributions, reporting, renewals, and discharge coordination."
                   />
                 </li>
               </ul>
@@ -151,33 +151,25 @@ export default function Investors() {
             <li>
               <InvestorProcess
                 number="1"
-                icon={<NEWS_ICON className="size-10" />}
-                heading="HEADER 1"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
+                icon={<HANDSHAKE_ICON className="size-12 lg:size-16" />}
+                heading="Initial Consultation & Onboarding"
+                description="We begin with a conversation to understand your investment goals, preferences, risk tolerance, and desired level of participation. Investors then complete the required onboarding forms so Olympia can present suitable opportunities when available."
               />
             </li>
             <li>
               <InvestorProcess
                 number="2"
-                icon={<CHART_ICON className="size-10" />}
-                heading="HEADER 2"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
+                icon={<NEWS_ICON className="size-12 lg:size-16" />}
+                heading="Deal Review"
+                description="Olympia presents carefully reviewed lending opportunities that may align with your stated goals and preferences. Each opportunity includes key information such as loan amount, property details, security position, rate, term, exit strategy, and relevant risk considerations."
               />
             </li>
             <li>
               <InvestorProcess
                 number="3"
-                icon={<HOME_ICON className="size-10" />}
-                heading="HEADER 3"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
-              />
-            </li>
-            <li>
-              <InvestorProcess
-                number="4"
-                icon={<USERS_ICON className="size-10" />}
-                heading="HEADER 4"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus. Nunc elementum lacus sit amet dolor scelerisque, non finibus diam pharetra. Pellentesque tristique turpis risus. Vestibulum porta lacus id tempor scelerisque. Nam vehicula condimentum tellus sed tempus. Lorem ipsum dolor sit."
+                icon={<CHART_ICON className="size-12 lg:size-16" />}
+                heading="Funding & Administration"
+                description="All mortgage transactions are completed through a real estate lawyer and funded through trust. Once the mortgage is registered and funded, Olympia administers the loan, including payment collection, investor distributions, reporting, renewals, and discharge coordination."
               />
             </li>
           </ul>
@@ -206,12 +198,13 @@ export default function Investors() {
           </div>
           <span className="w-1/4 xl:w-1/8 h-1 bg-accent" />
           <p className="w-full xl:w-1/2 text-lg lg:text-xl">
-            Just a quick 50-75 words to encourage people to invest with you. The
-            photo, headings, text, will all be changed with content from you
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            laoreet arcu non mauris laoreet aliquet. Cras et sagittis metus.
-            Nunc elementum lacus sit amet dolor scelerisque, non finibus diam
-            pharetra.
+            Olympia focuses on private mortgage opportunities targeting annual
+            returns typically in the range of 9% - 15%, depending on the
+            specific deal structure and risk profile. Each opportunity is
+            reviewed with a focus on real estate security, conservative
+            underwriting, and capital preservation. George Bahdi's construction
+            and development experience adds practical insight when assessing
+            project-based lending opportunities.
           </p>
           <div className="w-[250px]">
             <Button label="Contact Our Team" href="/contact" primary arrow />

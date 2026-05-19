@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { EMAIL_ICON, PHONE_ICON, PIN_ICON } from "@/utils/icons";
+import { EMAIL_ICON, PHONE_ICON } from "@/utils/icons";
 
 const PHONE_NUMBER = "(123) 456-7890";
-const EMAIL_ADDRESS = "email@email.com";
-const ADDRESS = "123 Main St, Niagara Falls, Ontario, A1A 1A1";
+const EMAIL_ADDRESS = "justin.domanico@gmail.com";
 const LICENSE_NUMBER = "13822";
 
 export default function Footer() {
@@ -63,10 +62,6 @@ export default function Footer() {
           <div className="flex gap-3 items-center">
             <EMAIL_ICON strokeColour="white" />
             <span>{EMAIL_ADDRESS}</span>
-          </div>
-          <div className="flex gap-3 items-center">
-            <PIN_ICON strokeColour="white" />
-            <span>{ADDRESS}</span>
           </div>
         </div>
       </div>

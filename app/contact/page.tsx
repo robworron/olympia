@@ -44,7 +44,7 @@ export default function Contact() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="relative z-20 flex flex-col lg:flex-row w-full lg:min-h-[60vh] bg-transparent -mt-8">
+      <section className="relative z-20 flex flex-col lg:flex-row w-full lg:min-h-[50vh] bg-transparent -mt-8">
         <div className="flex-1 flex justify-center bg-white px-4 md:px-8 py-8 md:py-16 rounded-4xl border-2 border-gray-200 shadow-2xl">
           <div className="flex flex-col gap-8 justify-center w-full max-w-3xl">
             <h3 className="w-full text-2xl md:text-3xl lg:text-4xl text-primary font-heading font-semibold">
@@ -55,7 +55,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="relative flex-1 bg-gray-200 px-2 py-8 md:p-8 rounded-4xl border-2 border-gray-200 shadow-2xl">
+        <div className="relative flex-1 bg-gray-200 px-2 py-8 md:px-8 md:py-16 rounded-4xl border-2 border-gray-200 shadow-2xl">
           <div className="absolute bottom-1/5 right-1/5 w-36 md:w-72 h-36 md:h-72">
             <Image
               src="/assets/graphic.png"

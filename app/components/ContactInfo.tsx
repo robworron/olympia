@@ -18,20 +18,12 @@ export default function ContactInfo() {
       </p>
       <ul className="flex flex-col gap-4 text-lg lg:text-xl">
         <li className="flex gap-4">
-          <PIN_ICON strokeColour="#c19d55" />
-          <div className="flex flex-col">
-            <p>123 Olympia Pl.</p>
-            <p>Niagara Falls, ON</p>
-            <p>A1A 1A1</p>
-          </div>
-        </li>
-        <li className="flex gap-4">
           <PHONE_ICON strokeColour="#c19d55" />
           <p>(905) 123-4567</p>
         </li>
         <li className="flex gap-4">
           <EMAIL_ICON strokeColour="#c19d55" />
-          <p>olympia@olympia.ca</p>
+          <p>justin.domanico@gmail.com</p>
         </li>
         <li className="flex gap-4">
           <CLOCK_ICON strokeColour="#c19d55" />

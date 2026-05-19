@@ -23,17 +23,17 @@ export default function About() {
               </h4>
             </div>
             <p className="text-base md:text-lg">
-              75-100 words about your business goes here. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Nunc fermentum lacinia sem,
-              vitae auctor urna pellentesque eget. Integer maximus sem feugiat
-              hendrerit finibus. Aliquam commodo, mi nec condimentum pharetra,
-              justo purus gravida enim, efficitur imperdiet orci ipsum vitae
-              tortor. Aenean sit amet dui at orci vestibulum fringilla et at
-              neque. Mauris quis justo faucibus, blandit lectus ut, imperdiet
-              dolor. Nunc lobortis lorem et eros bibendum cursus. Sed arcu urna,
-              bibendum in mauris ut, egestas rutrum nunc. Mauris ac porttitor
-              ipsum. Maecenas vel quam eget turpis dapibus sodales rhoncus sed
-              felis.
+              Olympia Mortgage Group combines mortgage expertise with decades of
+              real-world construction and lending experience. Co-founder Justin
+              Domanico is a licensed Level 2 Mortgage Agent who has assisted
+              hundreds of Niagara families with mortgage financing and has
+              experience across a wide range of residential, private, and
+              investment transactions. Co-founder George Bahdi brings over 30
+              years of homebuilding and private lending experience in Niagara
+              through Niagara Olympia Homes, an award-winning building company
+              known for quality residential and multi-unit projects. Together,
+              they bring a practical, disciplined approach to private mortgage
+              lending.
             </p>
           </div>
           <div className="relative w-full md:w-3/5 h-full">
@@ -67,13 +67,7 @@ export default function About() {
             <FounderCard
               name="Justin Domanico"
               jobTitle="Mortgage Broker"
-              description="75-150 words on who you are, what you do, your specializations,
-            credentials, and experience. I can add social media links, add contact info, and/or modify the bottom section of this card however you please. I just chose arbitrary numbers and job titles for filler - again changed to your wants. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Curabitur placerat ultrices
-            massa, et tempor eros rutrum tristique. Praesent feugiat egestas
-            ultrices. Quisque ut feugiat urna. Nam volutpat, est a ultrices
-            varius, augue felis gravida lectus, vitae auctor lectus elit a
-            massa. Quisque posuere diam sit amet pulvinar rutrum."
+              description="Justin Domanico is a licensed Level 2 Mortgage Agent in Ontario with experience across residential, private, and investment mortgage transactions. Through his mortgage career, Justin has assisted hundreds of Niagara families and developed a strong understanding of borrower needs, broker expectations, deal structuring, and underwriting. He is also a real estate investor, giving him a practical perspective on financing, property value, and long-term investment strategy. Within Olympia, Justin focuses on deal sourcing, underwriting, broker relationships, administration, and overall operational management."
               quickFacts={[
                 "10+ Years Experience",
                 "50+ Lenders",
@@ -93,13 +87,7 @@ export default function About() {
             <FounderCard
               name="George Bahdi"
               jobTitle="Realtor"
-              description="75-150 words on who you are, what you do, your specializations,
-            credentials, and experience. I can add social media links, add contact info, and/or modify the bottom section of this card however you please. I just chose arbitrary numbers and job titles for filler - again changed to your wants. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Curabitur placerat ultrices
-            massa, et tempor eros rutrum tristique. Praesent feugiat egestas
-            ultrices. Quisque ut feugiat urna. Nam volutpat, est a ultrices
-            varius, augue felis gravida lectus, vitae auctor lectus elit a
-            massa. Quisque posuere diam sit amet pulvinar rutrum."
+              description="George Bahdi brings over 30 years of experience in homebuilding, real estate development, and private lending in the Niagara Region. As the founder of Niagara Olympia Homes, an award-winning homebuilding company, George has been involved in a wide range of projects, from single-family residential homes to multi-unit developments. His hands-on construction experience allows Olympia to assess renovation, construction, and development files with a level of practical insight that many lenders cannot offer. Within Olympia, George provides strategic guidance, capital relationships, investor insight, and project-level expertise."
               quickFacts={[
                 "35+ Years Experience",
                 "300+ Homes Built",

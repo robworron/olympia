@@ -70,25 +70,20 @@ export default function Home() {
             </div>
             <div className="w-20 h-1 bg-accent" />
             <p className="md:text-lg text-primary leading-relaxed max-w-xl">
-              ~ 50 words here to summarize something quick about yourself, and
-              your company. We've spent years working within the Niagara
-              region's residential market, structuring deals that actually
-              close. From standard home financing to complex builds, our focus
-              is simple terms, reliable execution, and relationships that last
-              beyond a single transaction.
+              Olympia Mortgage Group Inc. is a licensed Ontario mortgage
+              administrator focused on private mortgage solutions backed by real
+              experience, disciplined underwriting, and practical real estate
+              knowledge. With successfully funded transactions, third-party
+              investor participation, and deep Niagara construction expertise,
+              Olympia is built to provide flexible lending solutions with
+              professionalism and care.
             </p>
             <div className="flex gap-10 pt-2">
               <div>
                 <p className="text-xl md:text-3xl font-bold text-primary">
-                  10+
+                  35+
                 </p>
                 <p className="text-sm text-gray-600">Years Experience</p>
-              </div>
-              <div>
-                <p className="text-xl md:text-3xl font-bold text-primary">
-                  250+
-                </p>
-                <p className="text-sm text-gray-600">Deals Funded</p>
               </div>
               <div>
                 <p className="text-xl md:text-3xl font-bold text-primary">
@@ -138,13 +133,12 @@ export default function Home() {
             </div>
             <div className="w-20 h-1 bg-accent" />
             <p className="text-base md:text-lg text-primary leading-relaxed max-w-xl">
-              ~ 50 words here to summarize what services you offer your clients
-              and why they should choose you. We provide tailored residential
-              financing solutions for homeowners, brokers, and investors
-              throughout the Niagara region. Whether you're purchasing,
-              refinancing, or funding a new build, our team works to structure
-              lending options that align with your timeline and long-term
-              objectives.
+              Olympia offers private mortgage solutions for borrowers, brokers,
+              and investors seeking flexible alternatives to traditional
+              lending. We review each file individually, focusing on property
+              strength, borrower profile, exit strategy, and overall risk. Our
+              approach combines common-sense underwriting, responsive service,
+              and real construction expertise.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="border-l-2 border-accent pl-4">
