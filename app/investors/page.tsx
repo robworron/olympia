@@ -26,16 +26,9 @@ export default function Investors() {
         </h1>
         <span className="w-1/4 md:w-1/8 h-1 bg-accent" />
         <p className="w-full xl:w-4/5 text-lg md:text-xl text-center md:text-start">
-          Olympia Mortgage Group Inc. is a licensed mortgage administrator that
-          presents private mortgage opportunities to individual investors on a
-          deal-by-deal basis. Investors can review each opportunity and choose
-          whether it fits their goals, risk tolerance, and investment
-          preferences. Olympia administers the mortgage by coordinating payment
-          collection, investor distributions, renewals, and ongoing servicing.
-          Opportunities typically target annual returns in the range of 9% -
-          15%, depending on the structure and risk profile of the loan. Where
-          available, select opportunities may also include co-investment
-          alongside Olympia's principals.
+          {
+            "Olympia Mortgage Group Inc. is a licensed mortgage administrator that presents private mortgage opportunities to individual investors on a deal-by-deal basis. Investors can review each opportunity and choose whether it fits their goals, risk tolerance, and investment preferences. Olympia administers the mortgage by coordinating payment collection, investor distributions, renewals, and ongoing servicing. Opportunities typically target annual returns in the range of 9% - 15%, depending on the structure and risk profile of the loan. Where available, select opportunities may also include co-investment alongside Olympia's principals."
+          }
         </p>
         <div className="w-48">
           <Button label="Get Started" href="/contact" primary />
@@ -86,7 +79,7 @@ export default function Investors() {
       <span className="w-full h-2 bg-accent" />
 
       {/** HOW IT WORKS SECTION */}
-      <section className="relative flex flex-col justify-center items-center w-full h-[30vh] min-h-[350px] md:h-auto md:min-h-[80vh]">
+      <section className="relative flex flex-col justify-center items-center w-full h-[30vh] min-h-87 md:h-auto md:min-h-[80vh]">
         <div className="absolute w-full h-full">
           <Image
             src="/assets/investor-hero.png"
@@ -96,7 +89,7 @@ export default function Investors() {
           />
         </div>
         <div className="absolute inset-0 bg-white/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 from-30% to-primary" />
+        <div className="absolute inset-0 bg-linear-to-b from-primary/60 from-30% to-primary" />
         <div className="relative flex items-center w-full max-w-7xl h-full md:mt-16 px-4 md:px-12 py-8 md:py-24">
           <div className="grid grid-cols-5 gap-4 lg:gap-16">
             <div className="col-span-5 md:col-span-2 flex flex-col gap-6 w-full">
@@ -105,10 +98,9 @@ export default function Investors() {
               </h2>
               <span className="w-1/3 h-1 bg-accent" />
               <p className="text-lg md:text-xl text-gray-100 font-semibold">
-                Here is where you'd place a step-by-step process in how your
-                process works. This paragraph represents a brief description,
-                roughly 50 words, to give a simple overview on what that process
-                is.
+                {
+                  "Here is where you'd place a step-by-step process in how your process works. This paragraph represents a brief description, roughly 50 words, to give a simple overview on what that process is."
+                }
               </p>
             </div>
             {/** FOR TABLET AND DESKTOP (MD+ SCREENS) */}
@@ -190,7 +182,7 @@ export default function Investors() {
         <div className="flex flex-col gap-4 lg:gap-8 justify-center items-center md:items-start w-full max-w-7xl px-4 md:px-8 lg:px-16 py-4 md:py-8 text-center md:text-start">
           <div className="flex flex-col gap-2">
             <h5 className="text-lg lg:text-xl text-accent font-heading font-semibold">
-              Let's Build Together
+              {"Let's Build Together"}
             </h5>
             <h3 className="text-3xl lg:text-4xl xl:text-5xl text-primary font-heading font-semibold">
               A trusted partner for your investment goals.
@@ -198,15 +190,11 @@ export default function Investors() {
           </div>
           <span className="w-1/4 xl:w-1/8 h-1 bg-accent" />
           <p className="w-full xl:w-1/2 text-lg lg:text-xl">
-            Olympia focuses on private mortgage opportunities targeting annual
-            returns typically in the range of 9% - 15%, depending on the
-            specific deal structure and risk profile. Each opportunity is
-            reviewed with a focus on real estate security, conservative
-            underwriting, and capital preservation. George Bahdi's construction
-            and development experience adds practical insight when assessing
-            project-based lending opportunities.
+            {
+              "Olympia focuses on private mortgage opportunities targeting annual returns typically in the range of 9% - 15%, depending on the specific deal structure and risk profile. Each opportunity is reviewed with a focus on real estate security, conservative underwriting, and capital preservation. George Bahdi's construction and development experience adds practical insight when assessing project-based lending opportunities."
+            }
           </p>
-          <div className="w-[250px]">
+          <div className="w-62">
             <Button label="Contact Our Team" href="/contact" primary arrow />
           </div>
         </div>

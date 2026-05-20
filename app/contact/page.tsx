@@ -13,21 +13,22 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center w-full">
       {/* HERO SECTION */}
-      <section className="relative flex w-full h-[30vh] min-h-[350px] md:h-[50vh] xl:h-[70vh] mx-12">
-        <div className="hidden lg:flex z-10 absolute inset-0 w-4/5 bg-gradient-to-br from-white from-40% to-transparent to-50% [clip-path:polygon(0_0,100%_0,60%_100%,0_100%)]" />
-        <div className="hidden lg:flex z-10 absolute inset-0 w-4/5 bg-gradient-to-r from-white from-50% to-transparent to-60% [clip-path:polygon(0_0,100%_0,60%_100%,0_100%)]" />
+      <section className="relative flex w-full h-[30vh] min-h-87 md:h-[50vh] xl:h-[70vh] mx-12">
+        <div className="hidden lg:flex z-10 absolute inset-0 w-4/5 bg-linear-to-br from-white from-40% to-transparent to-50% [clip-path:polygon(0_0,100%_0,60%_100%,0_100%)]" />
+        <div className="hidden lg:flex z-10 absolute inset-0 w-4/5 bg-linear-to-r from-white from-50% to-transparent to-60% [clip-path:polygon(0_0,100%_0,60%_100%,0_100%)]" />
         <div className="z-20 flex-1 flex justify-end items-center max-w-4xl px-4 md:px-8 lg:px-12">
           <div className="flex flex-col gap-2 md:gap-4 max-w-2xl">
             <h1 className="text-xl lg:text-2xl xl:text-3xl text-accent font-heading font-semibold">
               Contact Us
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-primary font-heading font-bold">
-              Let's Work Together.
+              {"Let's Work Together."}
             </h2>
             <span className="w-1/2 md:w-1/8 h-1 bg-accent" />
             <p className="md:text-lg lg:text-xl xl:text-2xl text-primary">
-              We're here to help you navigate any of your financial needs. Reach
-              out today and let's build together.
+              {
+                "We're here to help you navigate any of your financial needs. Reach out today and let's build together."
+              }
             </p>
           </div>
         </div>

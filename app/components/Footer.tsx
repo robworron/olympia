@@ -65,6 +65,18 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="max-w-7xl text-center mx-auto mt-12 px-8">
+        <p className="w-full md:w-1/2 min-w-300px mx-auto text-xs text-gray-400">
+          Olympia Mortgage Group Inc. is a licensed mortgage administrator in
+          the Province of Ontario. FSRA Licence No. MA 13822. This website is
+          for informational purposes only and does not constitute a commitment
+          to lend, an offer to invest, or financial advice. All mortgage and
+          investment opportunities are subject to underwriting, documentation,
+          investor approval, and applicable legal and regulatory requirements.
+          Private mortgage lending involves risk. Past performance is not
+          indicative of future results.
+        </p>
+      </div>
       <div className="max-w-7xl mx-auto px-8 mt-12 pt-6 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col gap-2">
         <p>
           © {new Date().getFullYear()} Olympia Mortgage Group Inc. All rights

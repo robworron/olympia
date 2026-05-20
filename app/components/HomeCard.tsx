@@ -22,7 +22,7 @@ export default function HomeCard({
         fill
         className="object-cover rounded-lg"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent from-20% to-primary to-70% rounded-lg" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent from-20% to-primary to-70% rounded-lg" />
       <div className="absolute bottom-0 z-10 p-6 flex flex-col gap-4 text-white">
         <h2 className="text-2xl md:text-3xl font-bold font-heading">{title}</h2>
         <p className="text-base md:text-lg text-gray-200">{description}</p>

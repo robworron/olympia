@@ -13,8 +13,8 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full">
       {/* HERO SECTION */}
-      <section className="relative flex w-full min-h-[400px] h-[50vh]">
-        <div className="z-10 absolute w-full h-full bg-gradient-to-r from-primary/70 md:from-primary md:from-50% to-primary/85 md:to-white/40 md:to-75%" />
+      <section className="relative flex w-full min-h-100 h-[50vh]">
+        <div className="z-10 absolute w-full h-full bg-linear-to-r from-primary/70 md:from-primary md:from-50% to-primary/85 md:to-white/40 md:to-75%" />
         <div className="z-20 flex-1 flex justify-center items-center w-full h-full">
           <div className="flex flex-col gap-12 p-4 md:p-0 md:ml-4 xl:ml-0">
             <div className="flex flex-col gap-4 w-full max-w-2xl">
@@ -43,7 +43,7 @@ export default function Services() {
           />
         </div>
       </section>
-      <div className="w-full h-2 bg-gradient-to-r from-accent/20 via-accent to-accent/20" />
+      <div className="w-full h-2 bg-linear-to-r from-accent/20 via-accent to-accent/20" />
 
       {/* HOW WE HELP SECTION */}
       <section className="flex justify-center w-full min-h-[80vh]">
@@ -98,7 +98,7 @@ export default function Services() {
 
         {/* BOTTOM SECTION */}
       </section>
-      <div className="w-full h-2 bg-gradient-to-r from-accent/20 via-accent to-accent/20" />
+      <div className="w-full h-2 bg-linear-to-r from-accent/20 via-accent to-accent/20" />
       <section className="flex justify-center w-full">
         <div className="flex w-full max-w-7xl items-center my-10 lg:my-0 px-4 md:px-8 gap-12">
           <div className="hidden lg:flex relative flex-1 md:h-96">
@@ -115,8 +115,9 @@ export default function Services() {
                 Local insight. Trusted relationships. Stronger communities.
               </h4>
               <p className="mt-2 text-gray-600">
-                We're more than a lender - we're a partner invested in the
-                places we call home.
+                {
+                  "We're more than a lender - we're a partner invested in the places we call home."
+                }
               </p>
             </div>
             <div className="w-4xs md:w-xs">

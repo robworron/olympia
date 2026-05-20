@@ -13,7 +13,7 @@ export default function Brokers() {
   return (
     <div className="flex flex-col w-full h-full">
       {/* HERO SECTION*/}
-      <section className="relative flex w-full h-[50vh] min-h-[700px] shadow-xl">
+      <section className="relative flex w-full h-[50vh] min-h-175 shadow-xl">
         <div className="absolute z-10 [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] w-[55.1%] h-[99.9%] md:bg-accent" />
         <div className="absolute z-10 [clip-path:polygon(0_0,100%_10%,20%_100%,0_100%)] md:[clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] w-[59%] h-full bg-white/20" />
         <div className="absolute z-20 md:[clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] flex flex-col justify-center w-full md:w-[55%] h-full px-4 md:px-16 md:bg-white">
@@ -74,14 +74,14 @@ export default function Brokers() {
             <BrokerBadge
               icon={<HOME_ICON className="size-12" />}
               header="Builder-Backed Insight"
-              text="For construction, renovation, and development files, George Bahdi’s 30+ years of building experience can provide added insight into feasibility, timelines, costs, and project risk."
+              text="For construction, renovation, and development files, George Bahdi's 30+ years of building experience can provide added insight into feasibility, timelines, costs, and project risk."
             />
           </div>
         </div>
       </section>
 
       {/* BOTTOM SECTION*/}
-      <section className="flex flex-col md:flex-row w-full bg-primary h-[70vh] md:h-[50vh] min-h-[700px] md:min-h-0">
+      <section className="flex flex-col md:flex-row w-full bg-primary h-[70vh] md:h-[50vh] min-h-175 md:min-h-0">
         <div className="relative flex-1 h-full">
           <Image
             src={"/assets/brokers-bottom.png"}

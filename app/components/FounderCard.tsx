@@ -6,7 +6,6 @@ type FounderCardProps = {
   description: string;
   quickFacts: string[];
   quickIcons: React.ReactNode[];
-  contact?: string;
   imgSrc: string;
   imgAlt?: string;
 };
@@ -17,13 +16,12 @@ export default function FounderCard({
   description,
   quickFacts,
   quickIcons,
-  contact,
   imgSrc,
   imgAlt = "Founder Image",
 }: FounderCardProps) {
   return (
     <article className="flex flex-col md:flex-row w-full">
-      <div className="relative w-full md:w-1/2 aspect-[2/3]">
+      <div className="relative w-full md:w-1/2 aspect-2/3">
         <Image src={imgSrc} alt={imgAlt} fill className="object-cover" />
       </div>
       <div className="flex flex-col gap-2 justify-center w-full md:w-1/2 p-4 md:px-12 ">
