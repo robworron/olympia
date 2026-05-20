@@ -84,7 +84,6 @@ export default function About() {
                   className="size-6 md:size-8 lg:size-6"
                 />,
               ]}
-              contact="hello@hello.com"
               imgSrc="/assets/about-headshot-r.png"
               imgAlt="Image of Justin Domanico"
             />
@@ -110,7 +109,6 @@ export default function About() {
                   className="size-6 md:size-8 lg:size-6"
                 />,
               ]}
-              contact="hello@hello.com"
               imgSrc="/assets/about-headshot.png"
               imgAlt="Image of George Bahdi"
             />
