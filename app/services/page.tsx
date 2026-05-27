@@ -27,10 +27,13 @@ export default function Services() {
               </h2>
             </div>
             <p className="w-full max-w-md text-lg md:text-xl text-white">
-              ~ 50-75 words on your services goes here. We provide flexible,
-              reliable financing for residential projects of all sizes. With
-              deep local insight and a relationship-first approach, we help our
-              communities grow stronger.
+              Olympia Mortgage Group provides private mortgage lending solutions
+              for borrowers, brokers, and investors across Ontario. We review
+              each file individually, with a focus on property strength,
+              borrower profile, equity, exit strategy, and overall risk. Our
+              services include purchases, refinances, equity take-outs, bridge
+              financing, second mortgages, and construction or
+              development-related lending opportunities.
             </p>
           </div>
         </div>

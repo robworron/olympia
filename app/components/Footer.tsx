@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { EMAIL_ICON, PHONE_ICON } from "@/utils/icons";
 
-const PHONE_NUMBER = "(123) 456-7890";
+const PHONE_NUMBER = "905-394-1016";
 const EMAIL_ADDRESS = "justin.domanico@gmail.com";
 const LICENSE_NUMBER = "13822";
 

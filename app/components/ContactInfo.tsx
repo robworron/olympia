@@ -19,7 +19,7 @@ export default function ContactInfo() {
       <ul className="flex flex-col gap-4 text-lg lg:text-xl">
         <li className="flex gap-4">
           <PHONE_ICON strokeColour="#c19d55" />
-          <p>(905) 123-4567</p>
+          <p>905-394-1016</p>
         </li>
         <li className="flex gap-4">
           <EMAIL_ICON strokeColour="#c19d55" />

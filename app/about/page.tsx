@@ -68,19 +68,14 @@ export default function About() {
               name="Justin Domanico"
               jobTitle="Mortgage Broker"
               description="Justin Domanico is a licensed Level 2 Mortgage Agent in Ontario with experience across residential, private, and investment mortgage transactions. Through his mortgage career, Justin has assisted hundreds of Niagara families and developed a strong understanding of borrower needs, broker expectations, deal structuring, and underwriting. He is also a real estate investor, giving him a practical perspective on financing, property value, and long-term investment strategy. Within Olympia, Justin focuses on deal sourcing, underwriting, broker relationships, administration, and overall operational management."
-              quickFacts={[
-                "10+ Years Experience",
-                "50+ Lenders",
-                "300+ Families Helped",
-              ]}
+              quickFacts={["50+ Lenders", "Top 10% Mortgage Value Nationwide"]}
               quickIcons={[
-                <HOME_ICON key="home" className="size-6 md:size-8 lg:size-6" />,
-                <TROPHY_ICON
-                  key="trophy"
-                  className="size-6 md:size-8 lg:size-6"
-                />,
                 <USERS_ICON
                   key="users"
+                  className="size-6 md:size-8 lg:size-6"
+                />,
+                <TROPHY_ICON
+                  key="trophy"
                   className="size-6 md:size-8 lg:size-6"
                 />,
               ]}
@@ -91,21 +86,13 @@ export default function About() {
           <div className="w-full xl:w-1/2 max-w-250 h-full border border-gray-200 rounded-3xl shadow-xl overflow-hidden">
             <FounderCard
               name="George Bahdi"
-              jobTitle="Realtor"
+              jobTitle="Homebuilder"
               description="George Bahdi brings over 30 years of experience in homebuilding, real estate development, and private lending in the Niagara Region. As the founder of Niagara Olympia Homes, an award-winning homebuilding company, George has been involved in a wide range of projects, from single-family residential homes to multi-unit developments. His hands-on construction experience allows Olympia to assess renovation, construction, and development files with a level of practical insight that many lenders cannot offer. Within Olympia, George provides strategic guidance, capital relationships, investor insight, and project-level expertise."
-              quickFacts={[
-                "35+ Years Experience",
-                "300+ Homes Built",
-                "Hundreds of Contracting Contacts",
-              ]}
+              quickFacts={["30+ Years Experience", "Award Winning Homebuilder"]}
               quickIcons={[
                 <HOME_ICON key="home" className="size-6 md:size-8 lg:size-6" />,
                 <TROPHY_ICON
                   key="trophy"
-                  className="size-6 md:size-8 lg:size-6"
-                />,
-                <USERS_ICON
-                  key="users"
                   className="size-6 md:size-8 lg:size-6"
                 />,
               ]}

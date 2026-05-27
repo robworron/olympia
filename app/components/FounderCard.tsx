@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 type FounderCardProps = {
   name: string;
@@ -6,7 +6,7 @@ type FounderCardProps = {
   description: string;
   quickFacts: string[];
   quickIcons: React.ReactNode[];
-  imgSrc: string;
+  imgSrc?: string;
   imgAlt?: string;
 };
 
@@ -21,6 +21,37 @@ export default function FounderCard({
 }: FounderCardProps) {
   return (
     <article className="flex flex-col md:flex-row w-full">
+      <div className="flex flex-col gap-2 justify-center w-full md:w-auto p-4 md:px-12 ">
+        <h2 className="text-2xl md:text-4xl text-primary font-heading font-bold">
+          {name}
+        </h2>
+        <h4 className="text-lg md:text-2xl text-accent">{jobTitle}</h4>
+        <span className="w-1/4 h-1 my-2 bg-accent" />
+        <p className="md:text-lg">{description}</p>
+        <span className="w-4/5 h-[0.5] mx-auto my-4 bg-gray-200" />
+        <ul className="flex flex-col gap-4">
+          <li className="flex gap-2 items-center">
+            <div>{quickIcons[0]}</div>
+            <p className="text-sm">{quickFacts[0]}</p>
+          </li>
+          <li className="flex gap-2 items-center">
+            <div>{quickIcons[1]}</div>
+            <p className="text-sm">{quickFacts[1]}</p>
+          </li>
+          <li className="flex gap-2 items-center">
+            <div>{quickIcons[2]}</div>
+            <p className="text-sm">{quickFacts[2]}</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+  );
+}
+
+// WHEN HEADSHOTS ARE INCLUDED
+
+/**
+ * <article className="flex flex-col md:flex-row w-full">
       <div className="relative w-full md:w-1/2 aspect-2/3">
         <Image src={imgSrc} alt={imgAlt} fill className="object-cover" />
       </div>
@@ -48,5 +79,4 @@ export default function FounderCard({
         </ul>
       </div>
     </article>
-  );
-}
+ */
