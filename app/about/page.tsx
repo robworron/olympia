@@ -68,7 +68,7 @@ export default function About() {
               name="Justin Domanico"
               jobTitle="Mortgage Broker"
               description="Justin Domanico is a licensed Level 2 Mortgage Agent in Ontario with experience across residential, private, and investment mortgage transactions. Through his mortgage career, Justin has assisted hundreds of Niagara families and developed a strong understanding of borrower needs, broker expectations, deal structuring, and underwriting. He is also a real estate investor, giving him a practical perspective on financing, property value, and long-term investment strategy. Within Olympia, Justin focuses on deal sourcing, underwriting, broker relationships, administration, and overall operational management."
-              quickFacts={["50+ Lenders", "Top 10% Mortgage Value Nationwide"]}
+              quickFacts={["50+ Lenders", "Top 10% Mortgage Volume Nationwide"]}
               quickIcons={[
                 <USERS_ICON
                   key="users"
