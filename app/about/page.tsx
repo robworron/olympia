@@ -57,7 +57,7 @@ export default function About() {
             The People Behind Olympia
           </h2>
           <p className="mb-4 text-lg lg:text-xl">
-            With a shared passion for helping clients achieve homeownership, out
+            With a shared passion for helping clients achieve homeownership, our
             founders bring expertise, integrity, and personal touch to every
             mortgage journey.
           </p>
