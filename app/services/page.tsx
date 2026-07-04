@@ -16,17 +16,17 @@ export default function Services() {
       <section className="relative flex w-full min-h-100 h-[50vh]">
         <div className="z-10 absolute w-full h-full bg-linear-to-r from-primary/70 md:from-primary md:from-50% to-primary/85 md:to-white/40 md:to-75%" />
         <div className="z-20 flex-1 flex justify-center items-center w-full h-full">
-          <div className="flex flex-col gap-12 p-4 md:p-0 md:ml-4 xl:ml-0">
-            <div className="flex flex-col gap-4 w-full max-w-2xl">
-              <h1 className="text-xl lg:text-2xl text-accent font-heading font-bold">
+          <div className="flex flex-col gap-2 md:gap-4 p-4 md:p-0 md:ml-4 lg:ml-8">
+            <div className="flex flex-col gap-4 lg:gap-2 xl:gap-4 w-full max-w-2xl">
+              <h1 className="text-lg lg:text-2xl text-accent font-heading font-bold">
                 Our Services
               </h1>
               <span className="w-1/8 h-1 bg-accent" />
-              <h2 className="text-3xl md:text-4xl lg:text-6xl text-white font-heading font-semibold">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-heading font-semibold">
                 Lending solutions built for Niagara.
               </h2>
             </div>
-            <p className="w-full max-w-md text-lg md:text-xl text-white">
+            <p className="w-full max-w-md lg:text-lg 2xl:text-xl text-white">
               Olympia Mortgage Group provides private mortgage lending solutions
               for borrowers, brokers, and investors across Ontario. We review
               each file individually, with a focus on property strength,

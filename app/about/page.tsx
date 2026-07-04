@@ -13,7 +13,7 @@ export default function About() {
     <div>
       <section className="relative flex justify-center w-full h-[70vh] min-h-200 md:min-h-0 md:h-[60vh] mb-8 md:mb-0 overflow-hidden">
         <div className="relative flex flex-col-reverse md:flex-row w-full h-full">
-          <div className="z-20 flex flex-col justify-center gap-4 w-full md:w-2/5 h-full p-4 xl:p-12 xl:pl-24">
+          <div className="z-20 flex flex-col justify-center gap-4 w-full md:w-4/5 lg:w-3/5 h-full p-4 md:ml-4 xl:p-12 ">
             <div className="w-full">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl text-primary font-heading font-bold">
                 About Olympia
@@ -22,7 +22,7 @@ export default function About() {
                 Credibility Through Experience
               </h4>
             </div>
-            <p className="text-base md:text-lg">
+            <p className="text-base lg:text-lg">
               Olympia Mortgage Group combines mortgage expertise with decades of
               real-world construction and lending experience. Co-founder Justin
               Domanico is a licensed Level 2 Mortgage Agent who has assisted
@@ -36,7 +36,7 @@ export default function About() {
               lending.
             </p>
           </div>
-          <div className="relative w-full md:w-3/5 h-full">
+          <div className="relative w-full md:w-4/5 lg:w-3/5 h-full">
             <Image
               src="/assets/about.png"
               alt="About image"
@@ -45,7 +45,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="hidden md:flex absolute inset-0 z-10 bg-linear-to-r from-white from-40% to-white/20 to-70%" />
+        <div className="hidden md:flex absolute inset-0 z-10 bg-linear-to-r from-white from-51% to-white/20 to-80%" />
       </section>
       <div className="w-full h-2 bg-linear-to-r from-accent/20 via-accent to-accent/20" />
       <section className="flex flex-col items-center w-full my-12 md:my-24 px-4 md:px-8">
@@ -62,7 +62,7 @@ export default function About() {
             mortgage journey.
           </p>
         </div>
-        <div className="flex flex-col xl:flex-row gap-8 justify-center w-full">
+        <div className="flex flex-col xl:flex-row gap-8 justify-center items-center w-full">
           <div className="w-full xl:w-1/2 max-w-250 h-full border border-gray-200 rounded-3xl shadow-xl overflow-hidden">
             <FounderCard
               name="Justin Domanico"

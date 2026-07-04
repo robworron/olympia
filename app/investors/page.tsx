@@ -97,11 +97,6 @@ export default function Investors() {
                 How It Works
               </h2>
               <span className="w-1/3 h-1 bg-accent" />
-              <p className="text-lg md:text-xl text-gray-100 font-semibold">
-                {
-                  "Here is where you'd place a step-by-step process in how your process works. This paragraph represents a brief description, roughly 50 words, to give a simple overview on what that process is."
-                }
-              </p>
             </div>
             {/** FOR TABLET AND DESKTOP (MD+ SCREENS) */}
             <div className="hidden md:flex flex-col col-span-3 w-full text-lg">
