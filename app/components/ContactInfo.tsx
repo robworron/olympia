@@ -23,7 +23,10 @@ export default function ContactInfo() {
         </li>
         <li className="flex gap-4">
           <EMAIL_ICON strokeColour="#c19d55" />
-          <p>justin.domanico@gmail.com</p>
+          <div className="flex flex-col">
+            <p>justin@olympiamortgagegroup.com</p>
+            <p>george@olympiamortgagegroup.com</p>
+          </div>
         </li>
         <li className="flex gap-4">
           <CLOCK_ICON strokeColour="#c19d55" />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FounderCard from "../components/FounderCard";
-import { HOME_ICON, TROPHY_ICON, USERS_ICON } from "@/utils/icons";
+import { EMAIL_ICON, HOME_ICON, TROPHY_ICON, USERS_ICON } from "@/utils/icons";
 
 export const metadata = {
   title: "About",
@@ -68,7 +68,11 @@ export default function About() {
               name="Justin Domanico"
               jobTitle="Mortgage Broker"
               description="Justin Domanico is a licensed Level 2 Mortgage Agent in Ontario with experience across residential, private, and investment mortgage transactions. Through his mortgage career, Justin has assisted hundreds of Niagara families and developed a strong understanding of borrower needs, broker expectations, deal structuring, and underwriting. He is also a real estate investor, giving him a practical perspective on financing, property value, and long-term investment strategy. Within Olympia, Justin focuses on deal sourcing, underwriting, broker relationships, administration, and overall operational management."
-              quickFacts={["50+ Lenders", "Top 10% Mortgage Volume Nationwide"]}
+              quickFacts={[
+                "50+ Lenders",
+                "Top 10% Mortgage Volume Nationwide",
+                "justin@olympiamortgagegroup.com",
+              ]}
               quickIcons={[
                 <USERS_ICON
                   key="users"
@@ -76,6 +80,10 @@ export default function About() {
                 />,
                 <TROPHY_ICON
                   key="trophy"
+                  className="size-6 md:size-8 lg:size-6"
+                />,
+                <EMAIL_ICON
+                  key="email"
                   className="size-6 md:size-8 lg:size-6"
                 />,
               ]}
@@ -88,11 +96,19 @@ export default function About() {
               name="George Bahdi"
               jobTitle="Homebuilder"
               description="George Bahdi brings over 30 years of experience in homebuilding, real estate development, and private lending in the Niagara Region. As the founder of Niagara Olympia Homes, an award-winning homebuilding company, George has been involved in a wide range of projects, from single-family residential homes to multi-unit developments. His hands-on construction experience allows Olympia to assess renovation, construction, and development files with a level of practical insight that many lenders cannot offer. Within Olympia, George provides strategic guidance, capital relationships, investor insight, and project-level expertise."
-              quickFacts={["30+ Years Experience", "Award Winning Homebuilder"]}
+              quickFacts={[
+                "30+ Years Experience",
+                "Award Winning Homebuilder",
+                "george@olympiamortgagegroup.com",
+              ]}
               quickIcons={[
                 <HOME_ICON key="home" className="size-6 md:size-8 lg:size-6" />,
                 <TROPHY_ICON
                   key="trophy"
+                  className="size-6 md:size-8 lg:size-6"
+                />,
+                <EMAIL_ICON
+                  key="email"
                   className="size-6 md:size-8 lg:size-6"
                 />,
               ]}

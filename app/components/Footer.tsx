@@ -3,7 +3,8 @@ import Link from "next/link";
 import { EMAIL_ICON, PHONE_ICON } from "@/utils/icons";
 
 const PHONE_NUMBER = "905-394-1016";
-const EMAIL_ADDRESS = "justin.domanico@gmail.com";
+const JUSTIN_EMAIL = "justin@olympiamortgagegroup.com";
+const GEORGE_EMAIL = "george@olympiamortgagegroup.com";
 const LICENSE_NUMBER = "13822";
 
 export default function Footer() {
@@ -61,7 +62,10 @@ export default function Footer() {
           </div>
           <div className="flex gap-3 items-center">
             <EMAIL_ICON strokeColour="white" />
-            <span>{EMAIL_ADDRESS}</span>
+            <div className="flex flex-col">
+              <span>{JUSTIN_EMAIL}</span>
+              <span>{GEORGE_EMAIL}</span>
+            </div>
           </div>
         </div>
       </div>
